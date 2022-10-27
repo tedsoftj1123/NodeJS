@@ -1,16 +1,30 @@
 {
   "name": "node",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Node Study",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tedsoftj1123/NodeJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
   "scripts": {
-    "start": "node ./bin/www"
+    "dev": "nodemon"
+  },
+  "bugs": {
+    "url": "https://github.com/tedsoftj1123/NodeJS/issues"
+  },
+  "homepage": "https://github.com/tedsoftj1123/NodeJS#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.6",
+    "@babel/node": "^7.20.0",
+    "@babel/preset-env": "^7.19.4",
+    "nodemon": "^2.0.20"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
-    "morgan": "~1.9.1"
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
   }
 }
