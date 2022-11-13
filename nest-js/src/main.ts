@@ -1,4 +1,4 @@
-import { Get, Param } from '@nestjs/common';
+import { Controller, Get, Param, Res } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
@@ -7,8 +7,11 @@ async function bootstrap() {
   await app.listen(3000);
 }
 
-@Get('/get')
-getString : string {
-  return "hello"
+@Controller('test')
+export class TestController {
+  @Get('/user')
+  testController(@Res() res): string {
+      return res.statu
+  }
 }
 bootstrap();
